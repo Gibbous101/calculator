@@ -1,3 +1,19 @@
+new folder>add jar file & wordcount.java
+
+open folder terminal
+1) javac -classpath hadoop-core-1.2.1.jar -d WC wordcount.java
+2) jar -cvf WordCount.jar -C WC .
+
+hadoop cmd
+3) hadoop jar C:\Users\saish\OneDrive\Desktop\word-count\WordCount.jar wordcount /saish /outputdir
+4) hadoop fs -ls /outputdir
+5) hadoop fs -cat /outputdir/part-r-00000
+
+
+
+
+
+
 import java.io.IOException;
 import java.util.StringTokenizer;
 
